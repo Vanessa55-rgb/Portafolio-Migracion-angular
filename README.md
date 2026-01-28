@@ -16,8 +16,8 @@ portafolio/
 │   ├── foto.jpg       
 │   └── README.md     
 │
-├── 📁 react/          
-│   └── (Próximamente archivos del proyecto React)
+├── 📁 angular/          
+│   └── (Próximamente archivos del proyecto Angular)
 │
 └── 📄 README.md       
 ```
@@ -31,4 +31,4 @@ Para visualizar la versión actual del portafolio:
 1.  Navega a la carpeta `html-css`.
 2.  Abre el archivo `index.html` en tu navegador web de preferencia (Chrome, Firefox, Edge, etc.).
 
-### Versión React
+### Versión Angular
