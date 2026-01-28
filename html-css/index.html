@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanessa Gómez | Portafolio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Fondo con efecto de malla animada -->
+  <div class="mesh-background"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Vanessa<span>.</span>Gómez</a>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fa-solid fa-user-astronaut"></i> Sobre mí</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-code"></i> Proyectos</a></li>
+        <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text animate-up">
+        <span class="badge"><i class="fa-solid fa-sparkles"></i> Disponible para nuevos proyectos</span>
+        <h1>Creando el futuro <span>línea a línea.</span></h1>
+        <p>Software Engineer student & Web Enthusiast. Especializada en crear experiencias digitales fluidas y modernas.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">Explorar Proyectos <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contacto" class="btn-secondary">Hablemos</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="section-header">
+        <span class="section-tag">Perfil</span>
+        <h2>Un poco sobre mí</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-flex">
+        <div class="about-img-container">
+          <img src="./foto.jpg" alt="Vanessa Gómez" class="foto-vanessa" />
+          <div class="img-glow"></div>
+        </div>
+        <div class="about-text">
+          <div class="about-card">
+            <p>
+              Soy estudiante de <span class="highlight">Ingeniería de Software</span> apasionada por el desarrollo
+              frontend y el diseño UI/UX. Mi objetivo es transformar ideas complejas en interfaces intuitivas.
+            </p>
+            <p>
+              Actualmente me encuentro ampliando mis conocimientos como <span class="highlight">Coder en Riwi</span>,
+              donde exploro las últimas tendencias tecnológicas.
+            </p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Creatividad</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="tech-pill"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <span class="section-tag">Galería</span>
+        <h2>Mis Proyectos Destacados</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="repo-card">
+          <div class="repo-img">
+            <img
+              src="https://img.freepik.com/vector-gratis/desarrollo-nuevas-aplicaciones-escritorio_23-2148684987.jpg?w=600&h=400&fit=crop"
+              alt="Proyecto Restaurante" />
+            <div class="repo-tags">
+              <span class="card-tag">HTML</span>
+              <span class="card-tag">CSS</span>
+            </div>
+          </div>
+          <div class="repo-info">
+            <h3>Restaurante Gourmet</h3>
+            <p>Landing page elegante diseñada para una experiencia gastronómica de alta gama.</p>
+            <a href="https://vanessa55-rgb.github.io/Actividad-1-Restaurante/" target="_blank" class="repo-link">
+              Ver Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="repo-card">
+          <div class="repo-img">
+            <img
+              src="https://img.freepik.com/vector-gratis/programadores-que-utilizan-lenguaje-programacion-javascript-computadora-gente-pequena-lenguaje-javascript-motor-javascript-concepto-desarrollo-web-js-ilustracion-aislada-violeta-vibrante-brillante_335657-986.jpg?w=600&h=400&fit=crop"
+              alt="Proyecto JS" />
+            <div class="repo-tags">
+              <span class="card-tag">JS</span>
+              <span class="card-tag">Logic</span>
+            </div>
+          </div>
+          <div class="repo-info">
+            <h3>JS Dashboard</h3>
+            <p>Implementación de lógica avanzada en JavaScript para gestión de datos dinámicos.</p>
+            <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM2/" target="_blank" class="repo-link">
+              Ver Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="repo-card">
+          <div class="repo-img">
+            <img
+              src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop"
+              alt="Proyecto SQL" />
+            <div class="repo-tags">
+              <span class="card-tag">SQL</span>
+              <span class="card-tag">DB</span>
+            </div>
+          </div>
+          <div class="repo-info">
+            <h3>VetPharma DB</h3>
+            <p>Arquitectura de base de datos relacional para clínicas veterinarias.</p>
+            <a href="https://github.com/Vanessa55-rgb/VetPharma.git" target="_blank" class="repo-link">
+              Código <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="view-more">
+        <a href="https://github.com/Vanessa55-rgb" target="_blank" class="btn-outline">
+          Explorar todos los proyectos <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contact-card">
+        <div class="contact-content">
+          <h2>¿Creamos algo grande?</h2>
+          <p>Estoy lista para transformar tus ideas en código. ¡Hablemos!</p>
+          <div class="contact-links">
+            <a href="mailto:vanessagomezlopez5@gmail.com" class="method-card">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/Vanessa55-rgb" target="_blank" class="method-card">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 | Hecho con <i class="fa-solid fa-heart neon-heart"></i> por Vanessa Gómez</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
