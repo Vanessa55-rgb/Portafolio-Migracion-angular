@@ -1,34 +1,24 @@
-# Portafolio Personal - Vanessa Gómez López
+# Portafolio - Vanessa Gómez
 
-El proyecto tiene el código fuente de mi portafolio personal. 
+El repositorio contiene la evolución de mi portafolio personal, desde una versión estática hasta una aplicación moderna y modular.
 
----
+## 📂 Contenido del Repositorio
 
-## 🗂️ Estructura del Repositorio
+### 1. [Angular](./angular) (Versión Actual)
+- **Tecnologías**: Angular 19, Tailwind CSS 4, Componentes Reutilizables.
+- **Ejecución**: Entra en la carpeta `angular` y ejecuta `npm run dev`.
 
-El proyecto está organizado en dos directorios principales para separar claramente ambas versiones:
+### 2. [HTML & CSS](./html-css) (Versión Original)
+- **Tecnologías**: HTML5, CSS3, JavaScript Vanilla.
+- **Ejecución**: Entra en la carpeta `html-css` y abre el archivo `index.html` directamente en el navegador.
 
-```bash
-portafolio/
-├── 📁 html-css/       
-│   ├── index.html     
-│   ├── styles.css     
-│   ├── foto.jpg       
-│   └── README.md     
-│
-├── 📁 angular/          
-│   └── (Próximamente archivos del proyecto Angular)
-│
-└── 📄 README.md       
-```
+## 🚀 Cómo empezar
+
+Si deseas ver la versión más moderna:
+1. `cd angular`
+2. `npm install`
+3. `npm run dev`
 
 ---
 
-## 📖 Cómo ejecutar el proyecto
-
-### Versión HTML/CSS
-Para visualizar la versión actual del portafolio:
-1.  Navega a la carpeta `html-css`.
-2.  Abre el archivo `index.html` en tu navegador web de preferencia (Chrome, Firefox, Edge, etc.).
-
-### Versión Angular
+© 2026 Vanessa Gómez.
