@@ -19,6 +19,10 @@ Si deseas ver la versión más moderna:
 2. `npm install`
 3. `npm run dev`
 
+Si deseas ver la versión original:
+1. `cd html-css`
+2. `index.html` 
+
 ---
 
 © 2026 Vanessa Gómez.
