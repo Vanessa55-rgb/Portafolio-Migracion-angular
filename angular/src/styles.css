@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #00f2fe;
+    --color-secondary: #4facfe;
+    --color-accent: #f093fb;
+    --color-dark: #080a12;
+    --color-darker: #040508;
+    --color-text-muted: #a0a0b0;
+    --color-glass: rgba(255, 255, 255, 0.03);
+    --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    body {
+        @apply font-['Space_Grotesk'] bg-darker text-white overflow-x-hidden leading-[1.6] antialiased;
+        margin: 0;
+    }
+}
+
+@layer utilities {
+    .animate-up {
+        animation: fadeUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .mesh-background {
+        background: radial-gradient(circle at 10% 10%, rgba(0, 242, 254, 0.1) 0%, transparent 40%),
+            radial-gradient(circle at 90% 90%, rgba(79, 172, 254, 0.1) 0%, transparent 40%),
+            radial-gradient(circle at 50% 50%, rgba(240, 147, 251, 0.05) 0%, transparent 60%);
+        animation: bgShift 20s infinite alternate;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollMouse {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 15px);
+        opacity: 0;
+    }
+}
+
+@keyframes bgShift {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.mouse-scroll::before {
+    content: '';
+    width: 4px;
+    height: 8px;
+    background: #00f2fe;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: scrollMouse 2s infinite;
+}
