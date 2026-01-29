@@ -1,0 +1,49 @@
+<section class="py-[120px] px-8 max-w-[1200px] mx-auto" id="projects">
+    <div class="mb-16">
+        <span class="text-primary text-[0.8rem] font-semibold uppercase tracking-[3px] block mb-2">Galería</span>
+        <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4">Mis Proyectos Destacados</h2>
+        <div class="w-[80px] h-[5px] bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+    </div>
+
+    <div class="grid gap-10 [grid-template-columns:repeat(auto-fit,minmax(350px,1fr))]">
+        @for (project of projects; track project.title) {
+        <article
+            class="bg-glass rounded-[30px] overflow-hidden border border-glass-border transition-all duration-500 hover:-translate-y-[15px] hover:border-primary hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)] group">
+            <div class="h-[240px] relative overflow-hidden">
+                <img [src]="project.img" [alt]="project.title"
+                    class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110" />
+                <div class="absolute top-6 right-6 flex gap-2">
+                    @for (tag of project.tags; track tag) {
+                    <span
+                        class="px-3 py-1.5 bg-darker/80 backdrop-blur-md rounded-lg text-[0.75rem] font-semibold text-primary">
+                        {{ tag }}
+                    </span>
+                    }
+                </div>
+            </div>
+            <div class="p-10">
+                <h3 class="text-[1.5rem] font-bold mb-4">{{ project.title }}</h3>
+                <p class="text-text-muted text-[1rem] mb-8 h-12 overflow-hidden leading-relaxed">
+                    {{ project.desc }}
+                </p>
+                <a [href]="project.link" target="_blank"
+                    class="text-primary no-underline font-semibold flex items-center gap-2 transition-all duration-300 hover:gap-3">
+                    {{ project.title === 'VetPharma DB' ? 'Código' : 'Ver Demo' }}
+                    @if (project.title === 'VetPharma DB') {
+                    <i class="fa-brands fa-github"></i>
+                    } @else {
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    }
+                </a>
+            </div>
+        </article>
+        }
+    </div>
+
+    <div class="mt-20 text-center">
+        <a href="https://github.com/Vanessa55-rgb" target="_blank"
+            class="inline-flex items-center gap-3 px-10 py-[1.1rem] border-2 border-glass-border rounded-[15px] text-white no-underline font-semibold transition-all duration-500 hover:border-primary hover:bg-primary/5 hover:scale-105">
+            Explorar todos los proyectos <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</section>
